@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A2026">
+
+    <ImageView
+        android:id="@+id/yemekresimi"
+        android:layout_width="375dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doner" />
+
+    <TextView
+        android:id="@+id/dukkanismi"
+        android:layout_width="254dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:text="Dükkan İsmi"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/pembe2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekresimi" />
+
+    <TextView
+        android:id="@+id/telno"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="2dp"
+        android:text="+905327229878"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/yildiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dukkanismi" />
+
+    <TextView
+        android:id="@+id/paratl"
+        android:layout_width="76dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="right"
+        android:text="90"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/paratl2"
+        app:layout_constraintTop_toBottomOf="@+id/yemekresimi" />
+
+    <TextView
+        android:id="@+id/paratl2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="TL"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekresimi" />
+
+    <TextView
+        android:id="@+id/yildiz"
+        android:layout_width="61dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:gravity="right"
+        android:text="★4.9"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/sepeteekle"
+        app:layout_constraintStart_toEndOf="@+id/telno"
+        app:layout_constraintTop_toBottomOf="@+id/dukkanismi" />
+
+    <TextView
+        android:id="@+id/sepeteekle"
+        android:layout_width="126dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/ripple3"
+        android:gravity="center"
+        android:text="Sepete Ekle"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paratl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
